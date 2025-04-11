@@ -1,7 +1,21 @@
-# Todoist
 
+# Todoist
+---
 A beautiful, feature-rich todo list application built with Flutter. This application helps you manage your tasks with a clean, modern interface and smooth animations.
 
+## Overview
+
+Light Theme Overview - 
+
+https://github.com/user-attachments/assets/f09493a9-d597-4082-b121-e60cc845c71d
+
+
+Dark Theme Overview - 
+
+https://github.com/user-attachments/assets/68074d87-3ab0-45ae-b4fb-a98b5d421094
+
+
+---
 ## Features
 
 ### Task Management
