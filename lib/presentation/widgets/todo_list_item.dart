@@ -12,13 +12,13 @@ class TodoListItem extends StatefulWidget {
   final int index;
 
   const TodoListItem({
-    Key? key,
+    super.key,
     required this.todo,
     required this.onToggle,
     required this.onDelete,
     required this.onUpdate,
     required this.index,
-  }) : super(key: key);
+  });
 
   @override
   State<TodoListItem> createState() => _TodoListItemState();
@@ -146,13 +146,10 @@ class _TodoListItemState extends State<TodoListItem>
                       child: AnimatedBuilder(
                         animation: _checkAnimation,
                         builder: (context, child) {
-                          return Transform.scale(
-                            scale: _checkAnimation.value,
-                            child: const Icon(
-                              Icons.check,
-                              size: 18,
-                              color: Colors.white,
-                            ),
+                          return Icon(
+                            Icons.check,
+                            size: 18,
+                            color: Theme.of(context).colorScheme.surface,
                           );
                         },
                       ),
@@ -179,7 +176,9 @@ class _TodoListItemState extends State<TodoListItem>
                               ),
                               decoration: const InputDecoration(
                                 border: InputBorder.none,
-                                contentPadding: EdgeInsets.zero,
+                                contentPadding: EdgeInsets.symmetric(
+                                  horizontal: AppTheme.spacingSmall,
+                                ),
                               ),
                               onEditingComplete: _saveEdit,
                             )

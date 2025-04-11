@@ -17,7 +17,7 @@ class AppTheme {
     end: Alignment.bottomRight,
   );
 
-  static const Color textColorPrimary = Color(0xFF333333);
+  static const Color textColorPrimary = Colors.grey;
   static const Color textColorSecondary = Color(0xFF757575);
   static const Color dividerColor = Color(0xFFEEEEEE);
 

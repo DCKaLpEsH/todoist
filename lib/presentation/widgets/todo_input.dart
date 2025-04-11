@@ -105,6 +105,9 @@ class _TodoInputState extends State<TodoInput>
                       decoration: const InputDecoration(
                         hintText: 'What needs to be done?',
                         border: InputBorder.none,
+                        contentPadding: EdgeInsets.symmetric(
+                          horizontal: AppTheme.spacingSmall,
+                        ),
                       ),
                       style: const TextStyle(
                         fontSize: 16,
@@ -118,6 +121,7 @@ class _TodoInputState extends State<TodoInput>
                     child: Container(
                       width: 40,
                       height: 40,
+                      margin: EdgeInsets.only(left: AppTheme.spacingSmall),
                       decoration: BoxDecoration(
                         color: AppTheme.primaryColor,
                         borderRadius: BorderRadius.circular(
